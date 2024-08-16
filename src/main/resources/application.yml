@@ -1,0 +1,17 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+##Configurado para produzir mensagens.
+nifi:
+  endpoint:
+    url: http://localhost:8080/nifi-api/data
+##Configurado para enviar dados a um endpoint via HTTP.
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: ""
+  password: ""
+##Configurado para enviar mensagens para uma fila.
